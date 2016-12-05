@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  spark_master:
+   build:
+     context: .
+     dockerfile: Dockerfile
+   container_name: spark_master
+   network_mode: 'bridge'
+   command: /start-master.sh
+   ports:
+    - "7077:7077"
+    - "8080:8080"
+  spark_worker:
+   build:
+     context: .
+     dockerfile: Dockerfile
+   command: /start-worker.sh
+   network_mode: 'bridge'
+   links:
+    - spark_master
