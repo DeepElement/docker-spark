@@ -16,8 +16,6 @@ Examples:
 
 Workers auto-discover `master` [Spark](http://spark.apache.org/) driver via injected network environmental variables at launch.
 
-![Spark](http://spark.apache.org/images/spark-logo-trademark.png)![Hadoop](http://hadoop.apache.org/images/hadoop-logo.jpg)
-
 # Usage
 To use with [Docker Compose](https://docs.docker.com/compose/), in `docker-compose.yml`:
 
@@ -48,3 +46,5 @@ docker-compose up
 # References
 
 - [Docker Hub](https://hub.docker.com/r/deepelement/docker-spark/)
+
+![Spark](http://spark.apache.org/images/spark-logo-trademark.png)![Hadoop](http://hadoop.apache.org/images/hadoop-logo.jpg)
