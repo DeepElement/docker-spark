@@ -3,6 +3,7 @@ Docker-Spark
 
 - [Summary](#summary)
 - [Usage](#usage)
+- [References](#references)
 
 # Summary
 Images to support various Spark/Hadoop configurations in a local cluster controlled by Docker.
@@ -39,3 +40,7 @@ To scale up workers, use the standard Compose interface:
 docker-compose scale spark_worker=5
 docker-compose up
 ```
+
+# References
+
+- [Docker Hub](https://hub.docker.com/r/deepelement/docker-spark/)
