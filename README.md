@@ -5,7 +5,13 @@ Docker-Spark
 - [Usage](#usage)
 
 # Summary
+Images to support various Spark/Hadoop configurations in a local cluster controlled by Docker.
 
+Fetch images by schema `deepelement/docker-spark:{Spark Version}-{Hadoop Version}`.
+Examples: 
+- `deepelement/docker-spark:2.0.2-2.7`
+- `deepelement/docker-spark:2.0.0-2.7`
+- `deepelement/docker-spark:2.0.2-2.4`
 
 # Usage
 To use with [Docker Compose](https://docs.docker.com/compose/), drop this in `docker-compose.yml` file:
