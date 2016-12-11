@@ -27,3 +27,9 @@ To use with [Docker Compose](https://docs.docker.com/compose/), drop this in `do
     links:
       - spark_master
 ```
+To scale up workers, use the standard Compose interface:
+
+``` sh
+docker-compose scale spark_worker=5
+docker-compose up
+```
