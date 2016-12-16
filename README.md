@@ -43,6 +43,13 @@ docker-compose scale spark_worker=5
 docker-compose up
 ```
 
+While the Spark setup follows traditional configuration, making things less noisy is a good example of configuration override:
+
+``` sh
+RUN cp $SPARK_HOME/conf/log4j.properties.template $SPARK_HOME/conf/log4j.properties \
+  && grep -rl 'log4j.rootCategory=INFO' $SPARK_HOME/conf | xargs sed -i 's/log4j.rootCategory=INFO/log4j.rootCategory=WARN/g'
+```
+
 # References
 
 - [Docker Hub](https://hub.docker.com/r/deepelement/docker-spark/)
