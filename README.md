@@ -6,7 +6,7 @@ Docker-Spark
 - [References](#references)
 
 # Summary
-Images to support various Spark/Hadoop configurations in a local cluster controlled by Docker.
+Images to support various Spark/Hadoop configurations in a [Stand-alone Cluster](http://spark.apache.org/docs/latest/spark-standalone.html) controlled by Docker.
 
 Fetch images by schema `deepelement/docker-spark:{Spark Version}-{Hadoop Version}`.
 Examples: 
