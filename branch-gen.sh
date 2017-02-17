@@ -1,5 +1,5 @@
-SPARK_VERSIONS=( '2.0.0' )
-HADOOP_VERSIONS=( '2.4' )
+SPARK_VERSIONS=( '2.0.0' '2.0.1' '2.0.2' '2.0.3' '2.0.4' '2.0.5' )
+HADOOP_VERSIONS=( '2.3' '2.4' '2.6' '2.7' )
 
 for SPARK_VERSION in "${SPARK_VERSIONS[@]}"
 do
