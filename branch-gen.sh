@@ -20,3 +20,5 @@ do
       git clean -df
    done
 done
+
+git checkout master
