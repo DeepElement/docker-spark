@@ -10,9 +10,9 @@ RUN /bin/echo debconf shared/accepted-oracle-license-v1-1 select true | /usr/bin
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install oracle-java7-installer oracle-java7-set-default
 
 RUN apt-get -y install curl
-RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-{SPARK_VERSION}-bin-hadoop{HADOOP_VERSION}.tgz | tar -xz -C /usr/local/
-RUN cd /usr/local && ln -s spark-{SPARK_VERSION}-bin-hadoop{HADOOP_VERSION} spark
-ENV SPARK_HOME="/usr/local/spark-{SPARK_VERSION}-bin-hadoop{HADOOP_VERSION}"
+RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.3.tgz | tar -xz -C /usr/local/
+RUN cd /usr/local && ln -s spark-2.1.1-bin-hadoop2.3 spark
+ENV SPARK_HOME="/usr/local/spark-2.1.1-bin-hadoop2.3"
 
 # Deploy Script
 ADD scripts/start-master.sh $SPARK_HOME/start-master.sh
